@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+</head>
+
+<body>
+  <div class="min-h-screen py-40" style="background-image: linear-gradient(115deg, #9f7aea, #fee2fe)">
+    <div class="center mx-auto">
+      <div class="flex flex-col lg:flex-row w-10/12  lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
+        <div class="w-full lg:w-1/2 flex flex-col items-center justify-center p-12" style="background-image:url(images/plain.jpg); background-repeat: no-repeat; background-position:center ; background-size:cover ;">
+          <h1 class="text-white text-3xl mb-3">Welcome</h1>
+          <div>
+            <p class="text-white">"Welcome aboard! We're thrilled to assist you with your flight booking. Our team is
+              dedicated to providing you with an exceptional travel experience. Thank you for choosing us for your
+              journey!"</p>
+          </div>
+        </div>
+        <div class=" w-full lg:w-1/2 py-16 px-12">
+          <h2 class="text-3xl mb-4 ">Book Flight</h2>
+          <p class="mb-4">Book your flight it will only take a minute</p>
+          <form action="">
+            <div class="grid grid-cols-2 gap-5">
+              <input type="text" placeholder="FirstName" class="border border-gray-400 py-1 px-2" required>
+              <input type="text" placeholder="SureName" class="border border-gray-400 py-1 px-2" required>
+            </div>
+            <div class=" grid grid-cols-2 gap-5 mt-5">
+              <input type="text" placeholder="Email" class="border border-gray-400 py-1 px-2 w-full" required>
+              <input type="number" placeholder="Phone Number"  class="border border-gray-400 py-1 px-2 w-full">
+            </div>
+            <div class="mt-5">
+              <label for="">Date of birth</label>
+              <input type="date" class="border border-gray-400 py-1 px-2 w-full text-gray-400" required>
+            </div>
+            <div class="grid grid-cols-2 gap-5 align-center mt-5">
+              <input type="number" placeholder="Passport number" class="border border-gray-400 py-1 px-2 h-10 mt-5" required>
+              <div>
+                <label for="">Passport Expirary Date</label>
+                <input type="date" class="border border-gray-400 py-1 px-2 w-full text-gray-400" required>
+
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-5">
+              <div class="mt-5">
+                <select name="flight" class="border border-gray-400 py-1 px-2 w-full bg-transparent">
+                  <option value="" class="overflow-x-auto">Choose your Flight Option</option>
+                  <option value="">Domestic Flights</option>
+                  <option value="">International Flights</option>
+                  <option value="">Non-Stop Flights</option>
+                  <option value="">Direct Flights</option>
+                  <option value="">Connecting Flights</option>
+                  <option value="">Short-Haul Flights</option>
+                  <option value="">Medium-Haul Flights</option>
+                  <option value="">Long-Haul Flights</option>
+                  <option value="">Red-Eye Flights</option>
+                  <option value="">Charter Flights</option>
+                  <option value="">First Class</option>
+                  <option value="">Business Class</option>
+                  <option value="">Premium Economy</option>
+                  <option value="">Economy Class</option>
+                  <option value="">Codeshare Flights</option>
+                  <option value="">Open-Jaw Flights</option>
+                  <option value="">Round-Trip Flights</option>
+                </select>
+
+              </div>
+
+              <div class="mt-5">
+                <select name="" id="" class="border border-gray-400 py-1 px-2 w-full bg-transparent">
+                  <option value="">Full-Service Carriers (FSC)</option>
+                  <option value="">Low-Cost Carriers (LCC)</option>
+                  <option value="">Charter Airlines</option>
+                  <option value="">Regional Airlines</option>
+                  <option value="">Cargo Airlines</option>
+                  <option value="">Hybrid Airlines</option>
+                  <option value="">Ultra-Low-Cost Carriers (ULCC)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mt-5 grid grid-cols-2 gap-5">
+              <select name="" id="" class="border border-gray-400 py-1 px-2 w-full bg-transparent">
+                <option value="">Seat Prefrence</option>
+                <option value="">Aisle</option>
+                <option value="">Window</option>
+                <option value="">Middle Seat</option>
+              </select>
+
+              <select name="" id="" class="border border-gray-400 py-1 px-2 w-full bg-transparent">
+                <option value="">Meal Prefrence</option>
+                <option value="">Vegetarin</option>
+                <option value="">Vegan</option>
+                <option value="">Kosher</option>
+                <option value="">Halal</option>
+                <option value="">Others</option>
+              </select>
+
+              <select name="" id="" class="border border-gray-400 py-1 px-2 w-full bg-transparent">
+                <option value="">Secial Assistance</option>
+                <option value="">wheelchair assistance</option>
+                <option value="">Medical  needs</option>
+                <option value="">None</option>
+                
+              </select>
+              <input type="text" placeholder="Frequently Flyer Number" class="border border-gray-400 py-1 px-2 w-full bg-transparent ">
+            </div>
+          
+          <div class="mt-5">
+            <input type="checkbox" class=" border border-gray-400">
+            <span>
+              Do you accept all the Requrment
+            </span>
+          </div>
+          <div class="mt-5">
+            <button type="submit" class="w-full bg-purple-500 py-3 text-center text-white">Book Now</button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
